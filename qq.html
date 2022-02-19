@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <link href='http://fonts.googleapis.com/css?family=Roboto:700' rel='stylesheet' type='text/css'>
+    
+    <style type="text/css">
+        
+        body > div
+        {
+            
+            margin:60px 60px;
+            
+            width:500px;
+            height:309px;
+            
+            background:#6d6d6d;
+            color:#fff;
+            
+            font-family:Roboto;
+            font-weight:700;
+            font-size:3.3em;
+            
+            text-align:center;
+            line-height:297px;
+            border-radius:5%;
+            
+            transition:all 0.5s ease;
+            
+        }
+        
+        .animation_circle{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: #53ea93;
+            position: relative;
+            left: 0;
+            animation-name: circle;
+            animation-duration: 2.5s ;
+
+        }
+        @keyframes circle{
+            0%{
+                left:0%;
+            }
+            50%
+            {
+                border-radius: 0%;
+            }
+            100%
+            {
+                left: 50%;
+            }
+        }
+        .circle:hover
+        {
+            border-radius:70%;
+            background:#53ea93;
+        }
+        @keyframes go-left-right {        
+    from { left: 0px; border-radius: 10%;    background: lime;  }             
+    to { left: calc(70% - 45px);border-radius: 100%;    background: rgb(1, 255, 242);  } 
+  }
+
+  .progress {
+    animation: go-left-right 3s infinite alternate;
+    position: relative;
+   
+    width: 100px;
+    height: 80px;
+    background: lime;
+  }
+     @keyframes change-color{
+         
+     }
+    </style>
+</head>
+<body>
+    
+    <div class="circle">аааааа</div>
+    <div class="progress" </div>
+    
+
+</body>
+</html>
